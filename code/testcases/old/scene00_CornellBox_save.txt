@@ -1,0 +1,87 @@
+
+PerspectiveCamera {
+    center 50 52 295.6
+    direction 0 -0.042612 -1
+    up 0 1 0
+    angle 30
+    width 1024
+    height 768
+}
+
+Background {
+    color 0 0 0
+}
+
+Materials {
+    numMaterials 6
+    Material { 
+      diffuseColor 0.65 0.05 0.05 
+    }
+    Material { 
+      diffuseColor 0.12 0.45 0.15 
+    }
+    Material { 
+      diffuseColor 0.73 0.73 0.73 
+    }
+    Material { 
+      diffuseColor 0 0 0 
+      specularColor 1 1 1
+      shininess 20
+      reflect 1
+      emission 0 0 0
+    }
+    Material { 
+      diffuseColor 1 1 1
+      specularColor 0 0 0
+      shininess 20
+      emission 0 0 0
+    }
+    Material { 
+      emission 15 15 15
+    }
+}
+
+Group {
+    numObjects 8
+    MaterialIndex 0
+    Plane {
+	normal 1 0 0
+        offset 0 
+    }
+    MaterialIndex 1
+    Plane {
+	normal -1 0 0
+        offset -100 
+    }
+    MaterialIndex 2
+    Plane {
+	normal 0 0 1
+        offset 0 
+    }
+    MaterialIndex 2
+    Plane {
+	normal 0 1 0
+        offset 0 
+    }
+    MaterialIndex 2
+    Plane {
+	normal 0 -1 0
+        offset -81.6 
+    }
+    MaterialIndex 3
+    Sphere {
+	center 27 16.5 47
+        radius 16.5 
+    }
+    MaterialIndex 4
+    Sphere {
+	center 73 16.5 78
+        radius 16.5 
+    }
+    MaterialIndex 5
+    Sphere {
+	center 50 681.2 71.6
+        radius 600
+    }
+}
+

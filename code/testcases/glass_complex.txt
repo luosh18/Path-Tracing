@@ -1,0 +1,118 @@
+
+PerspectiveCamera {
+    center 50 52 295.6
+    direction 0 -0.042612 -1
+    up 0 1 0
+    angle 30
+    width 256
+    height 197
+}
+
+Background {
+    color 0 0 0
+}
+
+Materials {
+    numMaterials 8
+    Material { 
+      diffuseColor 0.65 0.05 0.05 
+      diffuse 1
+    }
+    Material { 
+      diffuseColor 0.12 0.45 0.15 
+      diffuse 1
+    }
+    Material { 
+      diffuseColor 0.73 0.73 0.73 
+      diffuse 1
+    }
+    Material { 
+      diffuseColor 0 0 0
+      diffuse 0
+      specularColor 1 1 1
+      specular 1
+      emission 15 15 15
+    }
+    Material { 
+      diffuseColor 0 0 0
+      diffuse 0 
+      specularColor 1 1 1
+      specular 1
+      emission 0 0 0
+    }
+    Material { 
+      diffuseColor 1 1 1 
+      diffuse 1
+    }
+    Material { 
+      diffuseColor 0 0 0
+      diffuse 0
+      specularColor 1 1 1
+      specular 0.15
+      refractColor 1 1 1
+      refractiveIndex 1.5
+      refract 0.85
+      emission 0 0 0
+    }
+    Material { 
+      diffuseColor 0 0 0
+      diffuse 0
+      specularColor 1 1 1
+      specular 0.15
+      refractColor 1 0.25 0.25
+      refractiveIndex 1.7
+      refract 0.85
+      emission 0 0 0
+    }
+}
+
+Group {
+    numObjects 9
+    MaterialIndex 0
+    Plane {
+	normal 1 0 0
+        offset 0 
+    }
+    MaterialIndex 1
+    Plane {
+	normal -1 0 0
+        offset -100 
+    }
+    MaterialIndex 2
+    Plane {
+	normal 0 0 1
+        offset 0 
+    }
+    Plane {
+	normal 0 1 0
+        offset 0 
+    }
+    Plane {
+	normal 0 -1 0
+        offset -81.6 
+    }
+    MaterialIndex 3
+    Sphere {
+	center 50 681.2 71.6
+        radius 600
+    }
+    MaterialIndex 4
+    Sphere {
+	center 23 16.5 27
+        radius 16.5 
+    }
+    MaterialIndex 6
+    Sphere {
+	center 80 10 110
+        radius 10 
+    }
+    MaterialIndex 7
+    Transform {
+	Translate  60 -10 70 
+	Scale  150 150 150 
+	TriangleMesh {
+            obj_file mesh/bunny_200.obj
+        }
+    }    
+}
+
